@@ -50,12 +50,12 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-11-20T20:37:10.066Z",
-    "modified": "2022-11-20T20:47:26.034Z",
+    "modified": "2022-11-21T00:50:46.372Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"email\" : \"joao1212332@123.com\",\n  \"password\" : \"123123\",\n  \"name\" : \"joaoz3in\"\n}",
+      "raw": "{\n  \"name\":\"joao com token\",\n  \"email\":\"email@email.com\",\n  \"senha\":\"123\"\n}",
       "form": []
     },
     "tests": []
@@ -65,16 +65,29 @@
     "colId": "history",
     "containerId": "",
     "name": "localhost:3333/sign-up",
-    "url": "localhost:3333/sign-up",
-    "method": "POST",
+    "url": "localhost:3333/extract",
+    "method": "GET",
     "sortNum": 0,
     "created": "2022-11-20T20:37:41.513Z",
-    "modified": "2022-11-20T22:23:23.866Z",
-    "headers": [],
+    "modified": "2022-11-21T16:27:52.494Z",
+    "headers": [
+      {
+        "name": "authorization",
+        "value": "Bearer 9384b07f-770f-4e70-b741-223284de953b"
+      },
+      {
+        "name": "email",
+        "value": "123@123.com"
+      },
+      {
+        "name": "connection",
+        "value": "keep-alive"
+      }
+    ],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"email\" : \"joao123123@123.com\",\n  \"name\" : \"123\",\n  \"password\" : \"123\"\n}",
+      "raw": "{\n  \"email\":\"123@123.com\"\n}",
       "form": []
     },
     "tests": []

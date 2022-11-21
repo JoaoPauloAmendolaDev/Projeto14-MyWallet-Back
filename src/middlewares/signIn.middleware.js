@@ -15,7 +15,7 @@ export default async function signInMiddleware(req, res, next) {
   );
 
   if (error) {
-    const errors = error.map((event) => event.message);
+    const errors = error.details.map((event) => event.message);
     return res.status(422).send(errors);
   }
   try {
